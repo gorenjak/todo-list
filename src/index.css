@@ -1,0 +1,133 @@
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #3d3d3d;
+}
+
+.app-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 370px;
+  text-align: center;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(19, 91, 135, 0.5);
+}
+
+.input-style {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#todo-input {
+  width: 210px;
+  height: 32px;
+  font-size: 14px;
+  padding: 0 10px;
+  text-align: left;
+  border: 2px solid #5487c8;
+  outline: none;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+#todo-input:focus {
+  border-color: #3c6294;
+}
+
+#todo-input::placeholder {
+  text-align: left;
+}
+
+.custom-add-button {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  background-color: #5487c8;
+  color: white;
+  font-weight: bold;
+  height: 32px;
+  border-radius: 6px;
+  padding-left: 14px;
+}
+
+.custom-add-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.custom-add-button:hover {
+  background-color: #3c6294;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #e6f1ff;
+  border-radius: 5px;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.todo-text {
+  flex: 1;
+  margin-right: 10px;
+  text-align: left;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  padding-left: 10px;
+}
+
+.todo-item:last-child {
+  margin-bottom: 0;
+}
+
+.checkbox-label {
+  text-decoration: line-through;
+  color: #767575;
+}
+
+button[hasicononly="true"] {
+  margin-left: 10px;
+}
+
+.custom-delete-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  height: 32px;
+}
+
+#trash-icon {
+  fill: red;
+}
+
+#trash-icon:hover {
+  fill: #8c0000;
+}
